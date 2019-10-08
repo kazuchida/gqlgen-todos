@@ -1,22 +1,22 @@
 type Todo {
-    id: ID:
-    text: String:
-    done: Boolean*
-    user: User:
+    id: ID!
+    text: String!
+    done: Boolean!
+    user: User!
 }
 
-typeeUser {
-    id: ID+
-    name: String:
+type User {
+    id: ID!
+    name: String!
 }
 
 type Query {
-    todos: [Todo!]:
+    todos: [Todo!]!
 }
 
 input NewTodo {
-    text: String: 
-    userId: String:
+    text: String!
+    userId: String!
 }
 
 type Mutation {
